@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-forest text-cream font-sans;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-9 py-3.5 bg-rust border-none rounded text-white font-sans text-xs font-medium tracking-widest uppercase transition-all duration-400 cursor-pointer hover:bg-rust-glow hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent border border-opacity-15 border-cream hover:bg-opacity-5 hover:bg-white hover:border-opacity-30 hover:shadow-none hover:translate-y-0;
+  }
+
+  .section-label {
+    @apply font-sans text-xs font-medium tracking-widest uppercase text-opacity-50 text-cream;
+  }
+
+  .reveal {
+    @apply opacity-0 translate-y-7 transition-all duration-900 ease-out;
+  }
+
+  .reveal.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
