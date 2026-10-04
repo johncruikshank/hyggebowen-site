@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Navigation() {
@@ -18,6 +18,7 @@ export default function Navigation() {
         <ul className="hidden md:flex gap-8 items-center">
           <li><Link to="/the-homes" className="font-sans text-sm font-light hover:text-rust transition">The Homes</Link></li>
           <li><Link to="/the-land" className="font-sans text-sm font-light hover:text-rust transition">The Land</Link></li>
+          <li><Link to="/the-map" className="font-sans text-sm font-light hover:text-rust transition">The Map</Link></li>
           <li><Link to="/community" className="font-sans text-sm font-light hover:text-rust transition">Community</Link></li>
           <li><Link to="/the-film" className="font-sans text-sm font-light hover:text-rust transition">The Film</Link></li>
           <li><Link to="/connect" className="btn px-6 py-2 text-xs">Connect</Link></li>
@@ -42,6 +43,7 @@ export default function Navigation() {
           <ul className="flex flex-col p-4 gap-3">
             <li><Link to="/the-homes" className="block py-2 hover:text-rust" onClick={() => setIsOpen(false)}>The Homes</Link></li>
             <li><Link to="/the-land" className="block py-2 hover:text-rust" onClick={() => setIsOpen(false)}>The Land</Link></li>
+            <li><Link to="/the-map" className="block py-2 hover:text-rust" onClick={() => setIsOpen(false)}>The Map</Link></li>
             <li><Link to="/community" className="block py-2 hover:text-rust" onClick={() => setIsOpen(false)}>Community</Link></li>
             <li><Link to="/the-film" className="block py-2 hover:text-rust" onClick={() => setIsOpen(false)}>The Film</Link></li>
             <li><Link to="/connect" className="btn block text-center py-2" onClick={() => setIsOpen(false)}>Connect</Link></li>

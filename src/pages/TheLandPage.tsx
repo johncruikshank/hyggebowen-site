@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../components/Hero'
 import ScrollReveal from '../components/ScrollReveal'
 import { Link } from 'react-router-dom'
@@ -9,7 +8,7 @@ export default function TheLandPage() {
       <Hero
         image="/images/Arbutus-Ridge-0073.JPG"
         eyebrow="The Land"
-        title="3.4 hectares of coastal forest."
+        title="4.2 hectares of coastal forest."
         subtitle="Not a suburban lot. Not a resort. A living, breathing forest with trails, clearings, and a caretaker's presence."
       />
 
@@ -29,7 +28,7 @@ export default function TheLandPage() {
           <ScrollReveal delay={0.1}>
             <h3 className="font-serif text-2xl sm:text-3xl font-light mb-6 mt-12">The Place Itself</h3>
             <p className="font-sans text-base font-light leading-relaxed text-opacity-60 text-cream mb-6">
-              3.4 hectares (8.5 acres) of protected Pacific coastal forest. Dense Douglas fir and western hemlock at the top, arbutus and Garry oak in the clearings. The land slopes gently toward King Edward Bay.
+              4.2 hectares (10.4 acres) of protected Pacific coastal forest. Dense Douglas fir and western hemlock at the top, arbutus and Garry oak in the clearings. The land slopes gently toward King Edward Bay.
             </p>
             <p className="font-sans text-base font-light leading-relaxed text-opacity-60 text-cream mb-6">
               There are natural clearings where the fourteen cottages will cluster. Walking trails weave through the mature forest. The forest floor—soft with cedar duff and moss—is left largely undisturbed.
@@ -84,6 +83,27 @@ export default function TheLandPage() {
         </div>
       </section>
 
+
+      {/* 3D Map teaser */}
+      <section className="py-16 sm:py-24 px-6 border-t border-cream border-opacity-5">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <ScrollReveal>
+            <p className="section-label">The Map</p>
+            <h2 className="font-serif text-3xl sm:text-4xl font-light mt-4 mb-4">Walk the land before you walk the land.</h2>
+            <p className="font-sans text-sm sm:text-base font-light leading-relaxed text-cream text-opacity-60 mb-6">Every lot, the strata road, the pond and the forest, on the surveyed ground. Turn it, tilt it, and see how the clearings sit against the slope.</p>
+            <Link to="/the-map" className="inline-flex items-center gap-2 font-sans text-xs font-light tracking-widest text-rust hover:gap-4 transition-all">
+              Open the 3D site map
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-3.5 h-3.5"><path d="M3 8h10M9 4l4 4-4 4" /></svg>
+            </Link>
+          </ScrollReveal>
+          <ScrollReveal delay={0.1}>
+            <Link to="/the-map" className="block rounded-lg overflow-hidden border border-cream border-opacity-10 bg-bark aspect-[4/3] relative group">
+              <img src="/images/site-map-preview.jpg" alt="3D map of the Hygge Bowen site" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition" />
+              <span className="absolute bottom-3 left-3 font-serif italic text-sm text-cream text-opacity-70">Sixteen lots on the surveyed ground</span>
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
       {/* CTA */}
       <section className="relative py-24 sm:py-40 px-6 text-center bg-bark">
         <div className="max-w-2xl mx-auto">

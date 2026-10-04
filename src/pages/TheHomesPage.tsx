@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../components/Hero'
 import ScrollReveal from '../components/ScrollReveal'
 import { Link } from 'react-router-dom'
@@ -99,6 +98,27 @@ export default function TheHomesPage() {
         </div>
       </section>
 
+
+      {/* 3D Map teaser */}
+      <section className="py-16 sm:py-24 px-6 border-t border-cream border-opacity-5">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <ScrollReveal>
+            <p className="section-label">The Map</p>
+            <h2 className="font-serif text-3xl sm:text-4xl font-light mt-4 mb-4">See which home sits where.</h2>
+            <p className="font-sans text-sm sm:text-base font-light leading-relaxed text-cream text-opacity-60 mb-6">Tap any lot on the 3D map to see the concept plan we have placed there, its size, and how it faces the road and the trees.</p>
+            <Link to="/the-map" className="inline-flex items-center gap-2 font-sans text-xs font-light tracking-widest text-rust hover:gap-4 transition-all">
+              Open the 3D site map
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-3.5 h-3.5"><path d="M3 8h10M9 4l4 4-4 4" /></svg>
+            </Link>
+          </ScrollReveal>
+          <ScrollReveal delay={0.1}>
+            <Link to="/the-map" className="block rounded-lg overflow-hidden border border-cream border-opacity-10 bg-bark aspect-[4/3] relative group">
+              <img src="/images/site-map-preview.jpg" alt="3D map of the Hygge Bowen site" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition" />
+              <span className="absolute bottom-3 left-3 font-serif italic text-sm text-cream text-opacity-70">Sixteen lots on the surveyed ground</span>
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
       {/* CTA */}
       <section className="relative py-24 sm:py-40 px-6 text-center bg-bark">
         <div className="max-w-2xl mx-auto">
