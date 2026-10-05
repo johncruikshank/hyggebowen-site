@@ -1,5 +1,3 @@
-import React from 'react'
-import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import ScrollReveal from '../components/ScrollReveal'
@@ -12,7 +10,7 @@ export default function HomePage() {
         image="/images/Arbutus-Ridge-4741.jpeg"
         eyebrow="Bowen Island, British Columbia"
         title="The place that chooses you."
-        subtitle="Fourteen covenant-protected cottages on 8.5 acres of Pacific coastal forest. Twenty minutes from Vancouver. Built around a simple Danish idea: that the best things in life happen together."
+        subtitle="Fourteen covenant-protected cottages on 10.4 acres of Pacific coastal forest. Twenty minutes from Vancouver. Built around a simple Danish idea: that the best things in life happen together."
         ctas={[
           { label: 'Explore the Homes', href: '/the-homes' },
           { label: 'Watch the Film', href: '/the-film', ghost: true }
@@ -64,7 +62,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
           {[
             { num: '14', label: 'Cottage homes on strata lots' },
-            { num: '8.5', label: 'Acres of protected forest' },
+            { num: '10.4', label: 'Acres of protected forest' },
             { num: '20', label: 'Minutes from Vancouver' },
             { num: '1', label: 'Shared common house' }
           ].map((stat, i) => (

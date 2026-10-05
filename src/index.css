@@ -33,3 +33,33 @@
     @apply opacity-100 translate-y-0;
   }
 }
+
+/* --- 3D site map --- */
+.site-map-badge {
+  @apply w-7 h-7 rounded-full bg-forest bg-opacity-80 border border-cream border-opacity-40 text-cream font-sans text-xs font-medium flex items-center justify-center cursor-pointer transition hover:border-rust hover:text-rust;
+}
+.site-map-badge--active {
+  @apply bg-rust border-rust text-white;
+}
+.site-map-ctx {
+  @apply font-serif italic text-sm text-cream text-opacity-70 whitespace-nowrap;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+}
+.site-map-chip {
+  @apply font-sans text-xs tracking-widest uppercase px-4 py-2 rounded border border-cream border-opacity-15 text-cream text-opacity-60 transition hover:border-opacity-40 hover:text-opacity-100;
+}
+.site-map-chip--active {
+  @apply border-rust text-rust text-opacity-100;
+}
+.site-map-card {
+  @apply bg-bark bg-opacity-95 backdrop-blur border border-cream border-opacity-10 p-5 sm:rounded-lg shadow-2xl max-h-[46vh] sm:max-h-none overflow-y-auto;
+}
+.site-map-key i {
+  @apply inline-block w-3 h-3 rounded-sm mr-1.5 align-middle;
+}
+.site-map-lot {
+  @apply w-full text-left p-4 rounded border border-cream border-opacity-10 hover:border-opacity-30 transition;
+}
+.site-map-lot--active {
+  @apply border-rust border-opacity-100;
+}

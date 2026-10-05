@@ -13,6 +13,10 @@ export default {
         'rust-glow': '#d4683d',
         cream: '#f0ebe3',
       },
+      transitionDuration: {
+        400: '400ms',
+        900: '900ms',
+      },
       fontFamily: {
         serif: ['Cormorant Garamond', 'Georgia', 'serif'],
         sans: ['DM Sans', '-apple-system', 'sans-serif'],
